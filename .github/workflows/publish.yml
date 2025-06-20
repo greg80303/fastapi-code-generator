@@ -30,7 +30,7 @@ jobs:
           poetry install
           poetry build
       - name: Publish package
-        uses: pypa/gh-action-pypi-publish@strict_nullable
+        uses: pypa/gh-action-pypi-publish@publish
         with:
           user: __token__
           password: ${{ secrets.pypi_password }}
